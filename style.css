@@ -3,11 +3,12 @@ body {
   margin: 0;
   box-sizing: border-box;
   background: linear-gradient(90deg, black, #3a4452);
+  background-size: cover;
   color: white;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 41px;
 }
 
 .counter {
@@ -17,6 +18,22 @@ h1 {
   border: 1px solid lightgrey;
   border-radius: 10px;
   padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .counter {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  .btn {
+    padding: 12px 15px;
+    font-size: large;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
 }
 
 .btn {
